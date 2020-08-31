@@ -1,39 +1,49 @@
+
+
 .App {
   text-align: center;
+  height: 100%;
 }
 
 * {
-  background-color: #f3f3f3;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-.flexbox {
+.wrap {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  max-width: 768px;
-  /* height: 100vh; */
-  overflow: hidden;
+  width: 80%;
+  height: 100vh;
   margin: 0 auto;
   padding: 15px;
 }
 
-.flexbox .board {
+.wrap .board {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 300px;
+  flex-wrap: wrap;
+  height: 800px;
+  width: 30%;
+  /* width: 300px; */
   background-color: #313131;
   padding: 15px;
 }
 
-.flexbox .board .card {
-  padding: 15px 25px;
+.wrap .board .card {
+  padding: 30px;
   background-color: #f3f3f3;
-
   cursor: pointer;
-  margin-bottom: 15px;
+  margin: 10px;
+  width: auto;
+  height: 3vh;
 }
+
+#board-2 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(125, 159, 95);
+  width: 60%;
+  max-height: 70%;
+  border: rgb(140, 90, 63) 4px solid;
+} 
