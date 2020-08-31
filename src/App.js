@@ -25,8 +25,9 @@ function App() {
           </svg>
           <span className="font-semibold text-xl tracking-tight">Alphabet Game</span>
         </div>
+        <button onClick={e => reset(e)} className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Reset</button>
+
       </nav>
-      <button onClick={e => reset(e)} className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Reset</button>
       <main className= "wrap">
           <Board id="board-1" className="board" >
             { al.map((letter, i) => {
